@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Boys Club - Roast Edition</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        header {
+            background: #ff5733;
+            padding: 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            color: #fff;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #ffd700;
+        }
+        .roast-btn {
+            margin: 20px auto;
+            padding: 15px 30px;
+            background: #33ff57;
+            color: #000;
+            font-size: 1.5em;
+            border: 2px solid #000;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .roast-btn:hover {
+            background: #28a745;
+            color: #fff;
+        }
+        #roast-output {
+            font-size: 1.8em;
+            margin-top: 30px;
+            color: #333;
+            font-weight: bold;
+        }
+        .hall-of-shame {
+            margin: 40px auto;
+            padding: 20px;
+            background: #ffc107;
+            color: #333;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            margin-top: 50px;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            font-size: 0.9em;
+        }
+        .leaderboard {
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            background: #4c9aff;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        }
+        .leaderboard h2 {
+            margin-bottom: 10px;
+        }
+        .leaderboard ul {
+            list-style: none;
+            padding: 0;
+        }
+        .leaderboard ul li {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+    </style>
+    <script>
+        function generateRoast() {
+            const roasts = [
+                "You bring everyone joy... when you leave the room.",
+                "You're like a cloud. When you disappear, it’s a beautiful day.",
+                "You're proof that even the worst decisions can be fun.",
+                "You're the reason why shampoo bottles have instructions.",
+                "You have something on your chin... no, the third one down.",
+                "You're like a software bug: annoying and hard to fix!"
+            ];
+            const randomRoast = roasts[Math.floor(Math.random() * roasts.length)];
+            document.getElementById('roast-output').innerText = randomRoast;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the SBC Hall of shame</h1>
+    </header>
+
+    <main>
+        <button class="roast-btn" onclick="generateRoast()">Get Roasted</button>
+        <div id="roast-output">Press the button to see your roast!</div>
+
+        <div class="leaderboard">
+            <h2>Hall of Shame</h2>
+            <ul>
+                <li>Renish - "Have degree form cambridge university of sending anime gifs"</li>
+                <li>Smit - "Botyo koina Admin nathi banavto ('MAKE ME ADMIN, NOOB SMIT')"</li>
+                <li>Vandit - "Big brown MONKEY Boy"</li>
+                <li>Daksh - "Small fat guy"</li>
+                <li>Ved - "Virat kohli from chor bazaar"</li>
+                <li>Aditya T. - "He is animal (see profile picture)"</li>
+            </ul>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p>© 2024 Secret Boys Club. Laugh responsibly.</p>
+    </footer>
+</body>
+</html>
