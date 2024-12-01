@@ -14,6 +14,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secret Boys Club - Laughter Lounge</title>
     <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Ensure the body takes the full viewport height */
+            display: flex;
+            flex-direction: column;
+        }
         body {
             margin: 0;
             font-family: 'Comic Sans MS', sans-serif;
@@ -21,6 +28,7 @@
             color: #333;
             text-align: center;
             overflow-x: hidden;
+            
         }
         header {
             background: #ff5733;
@@ -34,36 +42,12 @@
             font-size: 1.2em;
             color: #ffd700;
         }
-        .roast-btn {
-            margin: 20px auto;
-            padding: 15px 30px;
-            background: #33ff57;
-            color: #000;
-            font-size: 1.5em;
-            border: 2px solid #000;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .roast-btn:hover {
-            background: #28a745;
-            color: #fff;
-        }
-        #roast-output {
-            font-size: 1.8em;
-            margin-top: 30px;
-            color: #333;
-            font-weight: bold;
-        }
-        .hall-of-shame {
-            margin: 40px auto;
+        main {
+            flex: 1; /* Pushes the footer to the bottom if content is short */
             padding: 20px;
-            background: #ffc107;
-            color: #333;
-            width: 80%;
-            border-radius: 10px;
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
         }
+        
         footer {
             margin-top: 50px;
             padding: 10px;
@@ -71,52 +55,20 @@
             color: #fff;
             font-size: 0.9em;
         }
-        .leaderboard {
-            margin: 20px auto;
-            padding: 20px;
-            width: 80%;
-            background: #4c9aff;
-            color: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-        }
-        .leaderboard h2 {
-            margin-bottom: 10px;
-        }
-        .leaderboard ul {
-            list-style: none;
-            padding: 0;
-        }
-        .leaderboard ul li {
-            font-size: 1.2em;
-            margin: 5px 0;
-        }
+
     </style>
-    <script>
-        function generateRoast() {
-            const roasts = [
-                "Your sense of humor is like gold... priceless but occasionally hard to find.",
-                "Your laugh is so contagious, it's basically a pandemic.",
-                "You're living proof that the best things come in unexpected packages.",
-                "You’re like Wi-Fi — when you’re around, life’s just better.",
-                "Your charm could crash servers — too much bandwidth required!",
-                "You're the VIP of fun, no membership card needed."
-            ];
-            const randomRoast = roasts[Math.floor(Math.random() * roasts.length)];
-            document.getElementById('roast-output').innerText = randomRoast;
-        }
-    </script>
+
 </head>
 <body>
     <header>
-        <h1>Welcome to the SBC Laughter Lounge</h1>
+        <h1>Welcome to the official website of SBC</h1>
         <p>Where every day is a reason to smile!</p>
     </header>
 
     <main>
         <div style="text-align: center; padding: 50px;">
             <h2 style="font-size: 2.5em; color: #ff5733;">WEBSITE FOR SBC</h2>
-            <p style="font-size: 1.2em; color: #333;">(SECRET BOYS CLUB)</p>
+            <p style="font-size: 1.2em; color: #333; ">(SECRET BOYS CLUB)</p>
            
     </main>
     
